@@ -12,6 +12,9 @@
 		0E98FFAE2063479C0037C4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E98FFAC2063479C0037C4D6 /* Main.storyboard */; };
 		0E98FFB02063479C0037C4D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E98FFAF2063479C0037C4D6 /* Assets.xcassets */; };
 		0E98FFB32063479C0037C4D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E98FFB12063479C0037C4D6 /* LaunchScreen.storyboard */; };
+		0E98FFC8206349E20037C4D6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98FFC5206349E20037C4D6 /* RxSwift.framework */; };
+		0E98FFC9206349E20037C4D6 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98FFC6206349E20037C4D6 /* RxBlocking.framework */; };
+		0E98FFCA206349E20037C4D6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98FFC7206349E20037C4D6 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		0E98FFAF2063479C0037C4D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E98FFB22063479C0037C4D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E98FFB42063479C0037C4D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E98FFC5206349E20037C4D6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		0E98FFC6206349E20037C4D6 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		0E98FFC7206349E20037C4D6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E98FFC8206349E20037C4D6 /* RxSwift.framework in Frameworks */,
+				0E98FFC9206349E20037C4D6 /* RxBlocking.framework in Frameworks */,
+				0E98FFCA206349E20037C4D6 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,7 @@
 			children = (
 				0E98FFA72063479C0037C4D6 /* TestRxSwift */,
 				0E98FFA62063479C0037C4D6 /* Products */,
+				0E98FFC4206349E20037C4D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +74,16 @@
 			path = TestRxSwift;
 			sourceTree = "<group>";
 		};
+		0E98FFC4206349E20037C4D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E98FFC6206349E20037C4D6 /* RxBlocking.framework */,
+				0E98FFC7206349E20037C4D6 /* RxCocoa.framework */,
+				0E98FFC5206349E20037C4D6 /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +94,7 @@
 				0E98FFA12063479C0037C4D6 /* Sources */,
 				0E98FFA22063479C0037C4D6 /* Frameworks */,
 				0E98FFA32063479C0037C4D6 /* Resources */,
+				0E98FFCC20634A3F0037C4D6 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -130,6 +151,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E98FFCC20634A3F0037C4D6 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			name = Carthage;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0E98FFA12063479C0037C4D6 /* Sources */ = {
@@ -275,6 +316,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestRxSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -290,6 +335,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = TestRxSwift/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

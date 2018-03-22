@@ -15,6 +15,8 @@
 		0E98FFC8206349E20037C4D6 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98FFC5206349E20037C4D6 /* RxSwift.framework */; };
 		0E98FFC9206349E20037C4D6 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98FFC6206349E20037C4D6 /* RxBlocking.framework */; };
 		0E98FFCA206349E20037C4D6 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E98FFC7206349E20037C4D6 /* RxCocoa.framework */; };
+		0E98FFD020634FE10037C4D6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98FFCF20634FE10037C4D6 /* ViewModel.swift */; };
+		0E98FFD2206351BB0037C4D6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98FFD1206351BB0037C4D6 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		0E98FFC5206349E20037C4D6 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		0E98FFC6206349E20037C4D6 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		0E98FFC7206349E20037C4D6 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		0E98FFCF20634FE10037C4D6 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		0E98FFD1206351BB0037C4D6 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				0E98FFAF2063479C0037C4D6 /* Assets.xcassets */,
 				0E98FFB12063479C0037C4D6 /* LaunchScreen.storyboard */,
 				0E98FFB42063479C0037C4D6 /* Info.plist */,
+				0E98FFCF20634FE10037C4D6 /* ViewModel.swift */,
+				0E98FFD1206351BB0037C4D6 /* Model.swift */,
 			);
 			path = TestRxSwift;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E98FFAB2063479C0037C4D6 /* ViewController.swift in Sources */,
+				0E98FFD020634FE10037C4D6 /* ViewModel.swift in Sources */,
 				0E98FFA92063479C0037C4D6 /* AppDelegate.swift in Sources */,
+				0E98FFD2206351BB0037C4D6 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

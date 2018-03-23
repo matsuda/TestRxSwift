@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E3E0A372064944F005941CA /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A362064944F005941CA /* Rx.swift */; };
+		0E3E0A3A2064AEDB005941CA /* CalcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A392064AEDB005941CA /* CalcController.swift */; };
+		0E3E0A3C2064C16C005941CA /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A3B2064C16C005941CA /* ListController.swift */; };
+		0E3E0A3E2064DA4D005941CA /* ValidationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A3D2064DA4D005941CA /* ValidationController.swift */; };
 		0E98FFA92063479C0037C4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98FFA82063479C0037C4D6 /* AppDelegate.swift */; };
 		0E98FFAB2063479C0037C4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98FFAA2063479C0037C4D6 /* ViewController.swift */; };
 		0E98FFAE2063479C0037C4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E98FFAC2063479C0037C4D6 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		0E3E0A362064944F005941CA /* Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rx.swift; sourceTree = "<group>"; };
+		0E3E0A392064AEDB005941CA /* CalcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcController.swift; sourceTree = "<group>"; };
+		0E3E0A3B2064C16C005941CA /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		0E3E0A3D2064DA4D005941CA /* ValidationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationController.swift; sourceTree = "<group>"; };
 		0E98FFA52063479C0037C4D6 /* TestRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E98FFA82063479C0037C4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E98FFAA2063479C0037C4D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 				0E98FFCF20634FE10037C4D6 /* ViewModel.swift */,
 				0E98FFD1206351BB0037C4D6 /* Model.swift */,
 				0E3E0A362064944F005941CA /* Rx.swift */,
+				0E3E0A392064AEDB005941CA /* CalcController.swift */,
+				0E3E0A3B2064C16C005941CA /* ListController.swift */,
+				0E3E0A3D2064DA4D005941CA /* ValidationController.swift */,
 			);
 			path = TestRxSwift;
 			sourceTree = "<group>";
@@ -190,7 +199,10 @@
 				0E98FFD020634FE10037C4D6 /* ViewModel.swift in Sources */,
 				0E98FFA92063479C0037C4D6 /* AppDelegate.swift in Sources */,
 				0E3E0A372064944F005941CA /* Rx.swift in Sources */,
+				0E3E0A3E2064DA4D005941CA /* ValidationController.swift in Sources */,
+				0E3E0A3A2064AEDB005941CA /* CalcController.swift in Sources */,
 				0E98FFD2206351BB0037C4D6 /* Model.swift in Sources */,
+				0E3E0A3C2064C16C005941CA /* ListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

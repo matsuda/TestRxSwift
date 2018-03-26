@@ -43,11 +43,19 @@ class RxSample {
 
 extension RxSample {
     func start() {
-        Observable.of("dog","cat")
-            .subscribe(observer())
+        let animals =
+            Observable.of("dog","whale")
+                .map({ $0.count })
+                .debug("animal")
+//            Observable.just([1,2])
+//                .subscribe(observer())
+//                .disposed(by: disposeBag)
+
+        animals
+            .subscribe()
             .disposed(by: disposeBag)
-        Observable.just([1,2])
-            .subscribe(observer())
+        animals
+            .subscribe()
             .disposed(by: disposeBag)
     }
 }

@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2CACC42068E51E006135A1 /* Rx+Subjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CACC32068E51E006135A1 /* Rx+Subjects.swift */; };
+		0E2CACC62068E5DD006135A1 /* Rx+Create.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CACC52068E5DD006135A1 /* Rx+Create.swift */; };
+		0E2CACC82068E73D006135A1 /* Rx+Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2CACC72068E73D006135A1 /* Rx+Transform.swift */; };
 		0E3E0A372064944F005941CA /* Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A362064944F005941CA /* Rx.swift */; };
 		0E3E0A3A2064AEDB005941CA /* CalcController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A392064AEDB005941CA /* CalcController.swift */; };
 		0E3E0A3C2064C16C005941CA /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A3B2064C16C005941CA /* ListController.swift */; };
 		0E3E0A3E2064DA4D005941CA /* ValidationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3E0A3D2064DA4D005941CA /* ValidationController.swift */; };
+		0E4551CF206B6A01005CD25B /* Rx+Connectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4551CE206B6A01005CD25B /* Rx+Connectable.swift */; };
+		0E55B86B2069EE2800D9F209 /* Rx+Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E55B86A2069EE2800D9F209 /* Rx+Condition.swift */; };
 		0E98FFA92063479C0037C4D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98FFA82063479C0037C4D6 /* AppDelegate.swift */; };
 		0E98FFAB2063479C0037C4D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E98FFAA2063479C0037C4D6 /* ViewController.swift */; };
 		0E98FFAE2063479C0037C4D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E98FFAC2063479C0037C4D6 /* Main.storyboard */; };
@@ -24,10 +29,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E2CACC32068E51E006135A1 /* Rx+Subjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Subjects.swift"; sourceTree = "<group>"; };
+		0E2CACC52068E5DD006135A1 /* Rx+Create.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Create.swift"; sourceTree = "<group>"; };
+		0E2CACC72068E73D006135A1 /* Rx+Transform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Transform.swift"; sourceTree = "<group>"; };
 		0E3E0A362064944F005941CA /* Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rx.swift; sourceTree = "<group>"; };
 		0E3E0A392064AEDB005941CA /* CalcController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcController.swift; sourceTree = "<group>"; };
 		0E3E0A3B2064C16C005941CA /* ListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
 		0E3E0A3D2064DA4D005941CA /* ValidationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationController.swift; sourceTree = "<group>"; };
+		0E4551CE206B6A01005CD25B /* Rx+Connectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Connectable.swift"; sourceTree = "<group>"; };
+		0E55B86A2069EE2800D9F209 /* Rx+Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rx+Condition.swift"; sourceTree = "<group>"; };
 		0E98FFA52063479C0037C4D6 /* TestRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E98FFA82063479C0037C4D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E98FFAA2063479C0037C4D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +95,11 @@
 				0E98FFCF20634FE10037C4D6 /* ViewModel.swift */,
 				0E98FFD1206351BB0037C4D6 /* Model.swift */,
 				0E3E0A362064944F005941CA /* Rx.swift */,
+				0E2CACC52068E5DD006135A1 /* Rx+Create.swift */,
+				0E2CACC32068E51E006135A1 /* Rx+Subjects.swift */,
+				0E2CACC72068E73D006135A1 /* Rx+Transform.swift */,
+				0E55B86A2069EE2800D9F209 /* Rx+Condition.swift */,
+				0E4551CE206B6A01005CD25B /* Rx+Connectable.swift */,
 				0E3E0A392064AEDB005941CA /* CalcController.swift */,
 				0E3E0A3B2064C16C005941CA /* ListController.swift */,
 				0E3E0A3D2064DA4D005941CA /* ValidationController.swift */,
@@ -195,12 +210,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E2CACC82068E73D006135A1 /* Rx+Transform.swift in Sources */,
 				0E98FFAB2063479C0037C4D6 /* ViewController.swift in Sources */,
 				0E98FFD020634FE10037C4D6 /* ViewModel.swift in Sources */,
 				0E98FFA92063479C0037C4D6 /* AppDelegate.swift in Sources */,
 				0E3E0A372064944F005941CA /* Rx.swift in Sources */,
+				0E2CACC42068E51E006135A1 /* Rx+Subjects.swift in Sources */,
+				0E2CACC62068E5DD006135A1 /* Rx+Create.swift in Sources */,
 				0E3E0A3E2064DA4D005941CA /* ValidationController.swift in Sources */,
+				0E4551CF206B6A01005CD25B /* Rx+Connectable.swift in Sources */,
 				0E3E0A3A2064AEDB005941CA /* CalcController.swift in Sources */,
+				0E55B86B2069EE2800D9F209 /* Rx+Condition.swift in Sources */,
 				0E98FFD2206351BB0037C4D6 /* Model.swift in Sources */,
 				0E3E0A3C2064C16C005941CA /* ListController.swift in Sources */,
 			);

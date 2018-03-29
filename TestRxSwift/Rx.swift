@@ -57,5 +57,14 @@ extension RxSample {
         animals
             .subscribe()
             .disposed(by: disposeBag)
+        animals.subscribeNext { (e) in
+            print(e)
+        }.disposed(by: disposeBag)
+    }
+}
+
+extension ObservableType {
+    func subscribeNext(onNext: @escaping (E) -> Void) -> Disposable {
+        return subscribe(onNext: onNext)
     }
 }
